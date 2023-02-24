@@ -1,9 +1,8 @@
-import { Article } from "./article";
-import { Subsection } from "./subsection";
+import { SectionChild } from "./section-child";
 
 export class Section {
     name!:string;
-    child!:(Article|Subsection)[];
+    children!:SectionChild[];
     
     // constructor(name:string,child:(Article|Subsection)[]){
     //     this.name=name;
